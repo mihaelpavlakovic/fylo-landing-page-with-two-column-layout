@@ -38,8 +38,17 @@ button {
   border: none;
   color: var(--light-grayish-blue);
   border-radius: 0.2rem;
-  padding: 1rem 3.5rem;
+  padding: 0.8rem 3.5rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 .fill-white {
@@ -119,6 +128,10 @@ button {
   position: absolute;
   width: 100%;
   transform: translateY(-100%);
+}
+
+.productive .curve-img-mobile {
+  display: none;
 }
 
 .productive-container {
@@ -223,7 +236,7 @@ button {
 
 .access .access-left p {
   max-width: 55ch;
-  color: var(--light-gray);
+  color: var(--white);
 }
 
 .access .access-right {
@@ -233,7 +246,7 @@ button {
 .access .access-right input {
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   margin-bottom: 1rem;
 }
 
@@ -288,4 +301,147 @@ button {
 
 .footer .footer-links .group-4 ul li a img {
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .navbar .nav-items {
+    gap: 1rem;
+    font-size: 0.8em;
+  }
+
+  .navbar .logo {
+    width: 25%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .hero-left {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .hero .hero-img {
+    width: 100%;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 1.4em;
+    line-height: 2rem;
+  }
+
+  .hero .hero-left p {
+    max-width: 38ch;
+    font-size: 0.8em;
+  }
+
+  .hero .hero-left .input-section {
+    flex-direction: column;
+  }
+
+  .hero .hero-left input {
+    width: 100%;
+  }
+
+  .productive {
+    padding: 1rem 0 6rem 0;
+    margin-top: 5rem;
+  }
+
+  .productive .curve-img {
+    display: none;
+  }
+
+  .productive .curve-img-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-100%);
+  }
+
+  .productive .productive-img {
+    order: 1;
+    width: 100%;
+  }
+
+  .productive .productive-left {
+    order: 2;
+  }
+
+  .productive-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .productive .productive-left h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .productive .productive-left .subheading-2 {
+    font-size: 0.8em;
+    max-width: 58ch;
+  }
+
+  .productive .productive-left .productive-link {
+    align-self: center;
+    margin-top: 1rem;
+    font-size: 0.8em;
+  }
+
+  .productive .productive-left .card {
+    align-self: center;
+    width: 100%;
+  }
+
+  .access {
+    padding: 3rem 0;
+  }
+
+  .access .access-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .access .access-content h3 {
+    font-size: 1em;
+  }
+
+  .access .access-content p {
+    font-size: 0.8em;
+  }
+
+  .access .access-right {
+    margin-top: 1rem;
+  }
+
+  .access .access-right input {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+
+  .access .access-right .btn {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 3rem 0;
+  }
+
+  .footer .footer-links {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+
+  .footer .footer-links .group-4 ul {
+    justify-content: center;
+  }
 }
